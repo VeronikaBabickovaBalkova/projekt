@@ -25,7 +25,7 @@ if user in users:
 else:
     print("unregistered user, terminating the program..")
     exit()
-    
+
 TEXTS = [
     '''Situated about 10 miles west of Kemmerer,
     Fossil Butte is a ruggedly impressive
@@ -107,7 +107,7 @@ if str(vyber_text).isdigit():
                     sumalldigit = sum(sumdigit)
 # graf
             for slovo in text_slova:
-                vycistene_slovo = slovo.replace(" ", "").replace(",", "")
+                vycistene_slovo = slovo.replace(" ", "").replace(",", "").replace(".", "")
                 vycistena_slova.append(vycistene_slovo)
             delky_slov = [len(slovo) for slovo in vycistena_slova]
             for delka in delky_slov:
@@ -134,4 +134,4 @@ print("LEN | OCCURENCES | NR.")
 print("-" * 40)
 for delka in sorted(cetnosti.keys()):
     cetnost = cetnosti[delka]
-    print("{:<3}| {:<15} | {:<3}".format(delka, '*' * cetnost, cetnost))
+    print("{:<3}| {:<20} | {:<3}".format(delka, '*' * cetnost, cetnost))
