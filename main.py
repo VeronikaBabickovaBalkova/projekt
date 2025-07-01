@@ -4,6 +4,7 @@ projekt_1.py: první projekt do Engeto Online Python Akademie
 author: Veronika Balková
 email: veronika.balkova@rohde-schwarz.com
 """
+print("test")
 
 users = {
     "bob" : "123",
